@@ -6,33 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./location.css" />
+    <link rel="stylesheet" href="./prosto.css" />
 </head>
 
 <body>
-    <button type="button" class="btn btn-header language-btn-header" data-modal-buy-now-open>Buy now &#707;</button>
 
 
-    <button class="btn-mobmenu-open" aria-expanded="false" aria-controls="open mobile-menu" data-mobile-menu-open>
 
-        <svg class="btn-mobmenu-close-icon" width="32" height="32">
-            <use href="./icons.svg#icon-Burger"></use>
+
+    <button class="contacts__button language-contacts__button btn " data-modal-location-open>
+        Our Locations
+        <svg class="contacts__icon" width="12px" height="12px">
+            <use href="./icons.svg#icon-buy_now"></use>
         </svg>
     </button>
-    <li class="contacts-button">
-        <button class="contacts__button language-contacts__button btn">
-            Our Locations
-            <svg class="contacts__icon" width="12px" height="12px">
-                <use href="./icons.svg#icon-buy_now"></use>
-            </svg>
-        </button>
-    </li>
+
+    <div class="backdrop is-hidden" data-modal-location>
+
+        <div class="modal-location">
+
+            <button type="button" class="modal-close" data-modal-location-close>
+                <svg class="modal__icon" width="20" height="20">
+                    <use href="./icons.svg#icon-modal_close-line"></use>
+                </svg>
+            </button>
+            <h2 class="location-title">Our Locations</h2>
+            <img src="./Poltava.png" alt="GoogleMaps" width="224px" height="199px" />
+            <button type="button" class="location-map link">
+                <a href="https://goo.gl/maps/bsdp44o5tjU6SwWN6" target="_blank" class=""
+                    rel="noopener noreferrer nofollow">Open map</a>
+            </button>
+        </div>
+    </div>
 
 
 </body>
-<script src="./modal-buy-now.js"></script>
-<script src="./modal-mobile-menu.js"></script>
+<script src="./modal-location.js"></script>
 
 </html>

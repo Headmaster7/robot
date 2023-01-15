@@ -42,10 +42,11 @@
   @include tablet {
     padding: 32px;
     max-width: 568px;
-    height: 644px;
+    height: 458px;
   }
 }
 .location-title {
+  position: relative;
   font-family: "Seymour One", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -53,6 +54,7 @@
   line-height: 1.5;
   color: #131313;
   margin-bottom: 20px;
+  margin-top: 0;
 }
 .modal-close {
   position: absolute;
@@ -62,19 +64,36 @@
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button.modal-close {
+  padding: 0;
+}
+.location-img {
+  width: 224px;
+  height: 195px;
+
+  @include tablet {
+    max-width: 448px;
+    height: 260px;
+  }
 }
 .link {
   text-decoration: none;
-  list-style: none;
 }
 .location-map {
   font-family: "Montserrat", sans-serif;
   font-style: 600;
   font-size: 12px;
   line-height: 15px;
+  color: #131313;
   width: 134px;
   height: 42px;
-  margin-top: 24px;
+  margin-top: 20px;
   background-color: #f8d24e;
   border-radius: 10px;
+}
+.location-txt {
 }
